@@ -2,6 +2,7 @@ package com.jwilder.tinder
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.jwilder.tinder.ui.MainFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

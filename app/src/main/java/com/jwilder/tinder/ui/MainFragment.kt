@@ -1,4 +1,4 @@
-package com.jwilder.tinder
+package com.jwilder.tinder.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.jwilder.tinder.databinding.FragmentMainBinding
-import com.jwilder.tinder.ui.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
