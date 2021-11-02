@@ -14,9 +14,9 @@ class GifViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun bindTo(gif: Gif, context: Context, onClick: (Gif) -> Unit) {
         Glide.with(context)
-            .load(gif.url)
+            .asGif()
+            .load(gif.images.original?.url ?: gif.url)
             .placeholder(R.drawable.giphy)
-            .load(R.drawable.giphy)
             .into(gifImageView)
 
         gifImageView.setOnClickListener {

@@ -29,7 +29,7 @@ class ExpandedGifFragment : Fragment() {
         viewModel.selectedGif.observe(viewLifecycleOwner, Observer { gif ->
             Glide.with(requireContext())
                 .asGif()
-                .load(gif.url)
+                .load(gif.images.original?.url ?: "")
                 .placeholder(R.drawable.giphy)
                 .into(binding.expandedGifImageView)
         })

@@ -18,7 +18,7 @@ class GifRepository @Inject constructor(
         return coroutineScope {
             val response = async(dispatcher) {
                 service.fetchTrendingGifs(
-                    "g9NTHgKtvXGs9E4lEn8FrBSvg4z1F61d",
+                    "7wQBSE6TEbjCAAx7tjwIhO9eID9ugMUT",
                     32,
                     0,
                     "r"

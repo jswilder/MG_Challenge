@@ -22,13 +22,15 @@ data class Gif(
 
 @JsonClass(generateAdapter = true)
 data class Images(
+    val original: Image?,
     @Json(name = "downsized_small")
-    val downsizedSmall: Image
+    val downsizedSmall: Image?
 )
 
 @JsonClass(generateAdapter = true)
 data class Image(
-    val mp4: String
+    val url: String?,
+    val mp4: String?
 )
 
 
