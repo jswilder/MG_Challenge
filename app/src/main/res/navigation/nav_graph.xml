@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.jwilder.tinder.ui.MainFragment"
+        android:name="com.jwilder.tinder.ui.fragments.MainFragment"
         android:label="MainFragment">
         <action
             android:id="@+id/action_mainFragment_to_expandedGifFragment"
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/expandedGifFragment"
-        android:name="com.jwilder.tinder.ui.ExpandedGifFragment"
+        android:name="com.jwilder.tinder.ui.fragments.ExpandedGifFragment"
         android:label="fragment_expanded_gif"
         tools:layout="@layout/fragment_expanded_gif" />
 
